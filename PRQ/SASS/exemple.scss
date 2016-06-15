@@ -1,48 +1,76 @@
-$color-text: #153489;
+/**
+ * Variables
+ */
+$color-text: #333;
 $width-gutter: 20px;
 
-/*
-*Nesting : imbrication des déclarations
+/**
+ * Nesting: imbrication des déclarations
  */
-
-.btn{
+.btn {
 	color: $color-text;
-//& : référence au parent
-	&-primary{
-		color:red;
+
+	// & : référence au parent (ici .btn)
+	&-primary {
 		width: 100px + $width-gutter;
 	}
-	&-large{}
+
+	&-large { }
 }
 
+/**
+ * Extension de classe: @extend
+ */
 .container {
 	width: 1280px;
 	margin: auto;
 }
 
-.specific-container{
+.specific-container {
 	@extend .container;
-	padding-left:20px;
-	padding-right:20px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 /**
  * Mixins
  */
 
-@mixin shadow($color){
-	text-shadow: 0 0 10px $color;
+@mixin shadow($x, $y, $blur, $color) {
+	text-shadow: $x $y $blur $color;
 }
 
-.monOmbre{
+.monOmbre {
 	shadow: 5px, 10px, 0, #ccc;
+}
+
+/**
+ * Fonction + mixin
+ */
+@function makelongshadow($color) {
+	$val: 0px 0px $color;
+	@for $i from 1 through 80 {
+		$val: #{$val}, #{$i}px #{$i}px #{$color};
+	}
+	@return $val;
+}
+
+@mixin longshadow($color) {
+	text-shadow: makelongshadow($color);
+}
+
+.monOmbre {
+	longshadow: #333;
 }
 
 /**
  * import
  */
-
 @import 'variables.scss';
-.exemple{
+.exemple {
 	color: $color-green;
+}
+
+.pouet {
+	color: red;
 }
