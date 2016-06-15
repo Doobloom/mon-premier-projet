@@ -1,0 +1,11 @@
+#scott {
+	position:absolute;
+    height: 140px;
+    width: 108px;
+    background-image: url(images/scott.png);
+}
+
+#decor{
+	position:absolute;
+	background-color:blue;
+}

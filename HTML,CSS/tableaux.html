@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>tableaux</title>
+    </head>
+
+    <body>
+    	<div id="test"></div>
+    	<script>
+    	var scores=[];
+
+    	scores=[1,5,6,14];
+    	scores[4]=20;
+    	scores[15]=33;
+    	//scores[4]=20 défini un ajout de la valeur 20 dans la 4ieme case du tableau
+
+    	scores.push(66,65,89);
+
+
+
+    	var noms=["jambon","beurre","fromage","cornichons","pain"];
+    	noms[6]="sauce";
+
+    	var view=noms[0].substring(0,4)+" a un score de "+scores[2];
+
+/*
+    	for(var i=0; i<4; i++) {
+    		document.write('Indice = '+i+'  Noms : '+noms[i]+'<br>');
+    	}
+
+    	for(var i=0; i<noms.length; i++){
+    		document.write('Indice = '+i+'  Noms : '+noms[i]+'<br>');
+    	}
+    	*/
+
+//méthode conseillée mais qui n'aime pas les indéfinis
+    	for (var i = 0, tableau; tableau=noms[i]; i++) {
+    		document.write('Indice = '+i+'  Noms : '+noms[i]+'<br>');
+    	}
+
+
+
+    	var morpion=([],[],[]);
+
+    	</script>
+
+    </body>
+
+</html>

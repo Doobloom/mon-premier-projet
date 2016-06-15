@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","variables.scss"],"names":[],"mappings":"AAEA,IAAA,CACC,UAAA,CCHW,GAAG,CDId,iBAAA,CAAA,QAAoB,CAApB,SAAA,CAAA,QAAoB,CACpB","file":"main.css","sourcesContent":["@import 'variables.scss';\r\n\r\nbody{\r\n\tbackground: $color-red;\r\n\ttransform: .2s ease;\r\n}","$color-red: red;"],"sourceRoot":"/source/"}

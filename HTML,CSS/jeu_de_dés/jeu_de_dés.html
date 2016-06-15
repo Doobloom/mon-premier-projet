@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>jeu de dés</title>
+        <style>.reload{display:none}
+               .regle{
+                font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                position: absolute;
+                width: 200px;
+                min-height: 40px;
+                left: 200px;
+                cursor: pointer;
+           }
+
+           .regle h5{
+            text-transform: uppercase;
+            background: #ADADAD;
+            position: relative;
+            text-align: center;
+            line-height: 40px;
+            z-index: 1;
+           }
+
+        .regle h5::after{
+            border: 12px solid transparent;
+            border-top-color: #ADADAD;
+            position: absolute;
+            left: 50%;
+            margin-left:-12px;
+            top: 40px;
+            content: "";
+        }
+
+        p{
+            padding: 40px 10px 10px;
+            text-align: left;
+            background: #DFDFDF;
+            position: absolute;
+            top:20px;
+            display: none;
+        }
+
+        .ferme{
+            position: absolute; right:-10px; top: 0;
+        }
+
+        </style>
+    </head>
+
+    <body>
+    	<div class="plateau">
+
+                    <div class="regle">
+                        <span class="ferme">&#8855;</span>
+            <h5>règles du jeu</h5>
+            <p>les règles sont assez simplistes, il vous suffis de cliquer sur le bouton "jouer" pour pouvoir lancer les dés présent en jeu, ensuite le jeu comparera les scores et déclarera le vainqueur de la partie, au bout de 5 parties le jeu s'arrètera et vous pourrez recommencer</p>
+        </div>
+
+
+    	<button class="jouer">lancer les dés</button>
+        <button class="reload">rejouer</button>
+    	<h4>joueur 1</h4>
+    	<div class="face1"><img src="images/des_06.png"/></div>
+    	<h4>joueur 2</h4>
+    	<div class="face2"><img src="images/des_06.png"/></div>
+        <div id="result"></div>
+        </div>
+
+
+    	<script src="js/Jquery.js"></script>
+    	<script src="js/script1.js"></script>
+
+    </body>
+</html>

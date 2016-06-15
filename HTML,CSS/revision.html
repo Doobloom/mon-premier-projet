@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+    </head>
+
+    <body>
+
+    	<div id='test'></div>
+
+		<script>
+//string
+var texte='je suis une chaine de caractères';
+
+//number
+var nbr=123;
+
+//float
+var flt=0.243;
+
+//boolean
+var partie=true;
+
+//fonction
+//object
+//symbol
+
+var op=10*10; // (+ - / %);
+var op2=12%5 //affiche le reste
+
+//incrementation
+var b=6;
+
+b++; //(b=b+1 ou b--);
+
+b+=5 //(b=b+5)
+
+//negation unitaire + et -
+var x=3;
+var y=-x; //(y=-3)
+
+document.getElementById('test').innerHTML=texte;
+//rappel en jquery $('#test').html(texte);
+
+// les structures de controle
+if(a==b) document.write('ok');
+
+/*
+== égal
+!= different
+< inférieur
+> supérieur
+<= inf ou égal
+>= sup ou égal
+
+|| OU logique vérifie qu'une des conditions est réalisée (expr1||expr2)
+&& ET logique vérifie que toutes les conditions sont réalisées
+! NON logique inverse l'état d'une variable booléenne (!condition)
+
+*/
+
+if (!isNaN(2)){document.write('2 est bien un chiffre')}
+else {document.write("2 n'est pas une chaine de caractères")}
+
+		</script>
+
+	</body>
+
+</html>

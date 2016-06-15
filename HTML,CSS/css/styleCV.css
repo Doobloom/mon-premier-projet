@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'aquilinetworegular';
+    src: url('polices/aquilinetwo-webfont.eot');
+    src: url('polices/aquilinetwo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/aquilinetwo-webfont.woff2') format('woff2'),
+         url('polices/aquilinetwo-webfont.woff') format('woff'),
+         url('polices/aquilinetwo-webfont.ttf') format('truetype'),
+         url('polices/aquilinetwo-webfont.svg#aquilinetworegular') format('svg');
+    font-weight: normal;
+    font-style: normal; /*style par défaut d'écriture*/
+
+}
+
+.intouchable{
+            display: inline-block;
+            width: 30%;
+}
+
+.col1{
+    color: red;
+    background-color: #000000;
+    vertical-align: top;
+}
+
+.col2{
+    color: blue;
+    background-color: #FFFFFF;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.alpha{
+        background-color: blue;
+        order: 0;
+}
+
+.beta{
+        background-color: white;
+        order: 2;
+        flex-grow:2;
+}
+
+.gamma{
+        background-color: red;
+        order: 4;
+        flex-grow: 1;
+}
+
+.item{
+
+}
+
+
+body{
+	color:#8f8f8f;
+    background-image:url("lanister.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+
+}
+
+
+h1,h2{font-family: 'aquilinetworegular', "polices", verdana, "fantasy"; font-weight: bold; font-size:20px; color:#FFd700;}
+h3,h4,h5{font-family: 'aquilinetworegular', "polices", verdana, "fantasy"; font-weight: bold; font-size:20px; color:#FFd700;}
+p span{color:#cd7f32; font-family: "Arial";}
+thead{color:#FFd700;}
+.img-float{
+    float:right;
+}
+a:hover{
+    color:#cd7f32;
+}
+.style{
+    list-style: none;
+}
+
+.style li{
+    background-image: url("winter.jpg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 25px;
+}
+
+.style ol li{
+    background-image: none;
+
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 800px){
+
+    body{
+    color:#8f8f8f;
+    background-image:url("winter.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+        }
+}

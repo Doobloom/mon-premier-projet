@@ -1,0 +1,19 @@
+C:\Users\stage\Desktop\gulptest  (gulptest@1.0.0)
+? gulp sass
+(node:1340) fs: re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
+module.js:568
+  return process.dlopen(module, path._makeLong(filename));
+                 ^
+
+Error: %1 n?est pas une application Win32 valide.
+\\?\C:\Users\stage\Desktop\gulptest\node_modules\node-sass\vendor\win32-x64-48\binding.node
+    at Error (native)
+    at Object.Module._extensions..node (module.js:568:18)
+    at Module.load (module.js:458:32)
+    at tryModuleLoad (module.js:417:12)
+    at Function.Module._load (module.js:409:3)
+    at Module.require (module.js:468:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (C:\Users\stage\Desktop\gulptest\node_modules\node-sass\lib\index.js:23:15)
+    at Module._compile (module.js:541:32)
+    at Object.Module._extensions..js (module.js:550:10)

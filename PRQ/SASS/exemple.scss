@@ -1,0 +1,48 @@
+$color-text: #153489;
+$width-gutter: 20px;
+
+/*
+*Nesting : imbrication des déclarations
+ */
+
+.btn{
+	color: $color-text;
+//& : référence au parent
+	&-primary{
+		color:red;
+		width: 100px + $width-gutter;
+	}
+	&-large{}
+}
+
+.container {
+	width: 1280px;
+	margin: auto;
+}
+
+.specific-container{
+	@extend .container;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+/**
+ * Mixins
+ */
+
+@mixin shadow($color){
+	text-shadow: 0 0 10px $color;
+}
+
+.monOmbre{
+	shadow: 5px, 10px, 0, #ccc;
+}
+
+/**
+ * import
+ */
+
+@import 'variables.scss';
+.exemple{
+	color: $color-green;
+}
